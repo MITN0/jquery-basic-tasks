@@ -1,0 +1,78 @@
+<!--
+Project: Task Tracker v2.0
+Description: Basic Javascript and jQuery task application using Bootstrap 3,
+             custom CSS styling, and a custom button image.
+Specifications: - Loads data into display area from JSON format of existing data
+                - Allows new tasks to be added and instantly added to the task list
+                - Does not require a web server and can be ran offline
+                - Data exchanges done in JSON format
+                - Application is mobile responsive
+                - Tasks can be removed in real time
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Basic jQuery Tasks</title>
+
+      <script src="js/script.js" type="text/javascript"></script>
+
+      <link href="css/bootstrap.min.css" rel="stylesheet"/>
+      <link href="css/main.css" rel="stylesheet"/>
+
+  </head>
+
+  <body>
+    <section class="section-heading">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-11">
+            <h1>Task Tracker</h1>
+            <p>v1.0</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-5 task-section">
+            <h4>Create a Task</h4>
+            <form id="newTaskForm" class="">
+              <div class="form-group">
+                <label for="taskName">Task Name</label>
+                <input type="text" class="form-control" id="taskName">
+
+                <label for="taskDate">Task Date</label>
+                <input type="text" class="form-control" id="taskDate">
+
+                <label for="assignedTo">Assigned To</label>
+                <input type="text" class="form-control" id="assignedTo">
+              </div>
+            </form>
+
+            <button class="btn btn-primary btn-pad" onclick="addTask($('#taskName').val(), $('#taskDate').val(), $('#assignedTo').val())">Submit</button>
+          </div>
+
+          <div class="col-md-5 table-section">
+            <h4>Existing Tasks</h4>
+
+              <table class="table table-styling table-striped" id="taskTable">
+                <script>
+                listTasks();
+                </script>
+              </table>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+  </body>
+
+</html>

@@ -1,0 +1,73 @@
+/*
+Custom CSS stylesheet
+*/
+
+body {
+  background: #f1f1f1;
+}
+
+.section-heading {
+  padding: 10px;
+  border: 10px solid #d6d6d6;
+  border-bottom: none;
+}
+
+.app-section {
+  background-color: #ffffff;
+  padding: 50px 15px;
+  margin: 10px;
+  margin-top: 0px;
+}
+
+h4 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.tbl-strong {
+  font-weight: bold;
+}
+
+.tbl-assigned {
+  font-weight: bold;
+  text-align: right;
+}
+
+.tbl-date {
+  font-size: 12px;
+  opacity: 0.7;
+  padding-left: 2px;
+}
+
+table {
+  border: 3px solid #dfdfdf !important;
+}
+
+.table td tr {
+  border-color: red !important;
+}
+
+
+.form-group input {
+  margin-bottom: 20px;
+}
+
+.form-control  {
+  background-color: #eeeeee;
+  height: 40px !important;
+}
+
+
+
+.btn-pad {
+  background-color: #444444 !important;
+  font-size: 18px;
+  padding: 14px 25px;
+  margin-bottom:30px;
+  margin-top: 20px;
+}
+
+
+.remove-item:hover {
+  cursor: pointer;
+}
